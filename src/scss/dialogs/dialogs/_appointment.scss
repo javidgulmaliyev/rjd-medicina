@@ -1,0 +1,65 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.appointment-dialog {
+  z-index: 250;
+  padding: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.appointment-form {
+  position: relative;
+  isolation: isolate;
+  inline-size: 100%;
+  max-inline-size: 480px;
+  margin: auto;
+  padding-block: functions.responsive-value(40, 32) functions.responsive-value(32, 29);
+  padding-inline: functions.responsive-value(48, 24);
+  color: variables.$color-white;
+  background-color: variables.$color-3a9ecb;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+
+  // .appointment-form__close
+  &__close {
+    position: absolute;
+    inset-block-start: functions.responsive-value(31, 23);
+    inset-inline-end: functions.responsive-value(24, 16);
+  }
+
+  // .appointment-form__title
+  &__title {
+    margin-block-end: functions.responsive-value(40, 27);
+    font-weight: 600;
+    font-size: functions.responsive-value(40, 32);
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  // .appointment-form__inputs
+  &__inputs {
+    display: grid;
+    gap: 24px;
+    margin-block-end: 32px;
+  }
+
+  // .appointment-form__button
+  &__button {
+    --button-background-color-1: #f2f2f2;
+    --button-background-color-2: #b9b9b9;
+    --button-padding-inline: 13px;
+    --button-font-weight: 700;
+    --button-color: #{variables.$color-0067a2};
+
+    margin-inline: auto;
+
+    @media (max-width: 768px) {
+      --button-inline-size: 100%;
+      --button-inner-inline-size: #{calc(100% - 16px)};
+    }
+  }
+}

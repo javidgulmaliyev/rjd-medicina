@@ -19,6 +19,10 @@
       <stop offset=".56" stop-color="#006ea9" />
       <stop offset="1" stop-color="#0067a2" />
     </linearGradient>
+    <linearGradient id="icon-gradient-logo-plus-wave-white" x1="84.85" x2="118.22" y1="11.65" y2="11.65" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity="0" />
+      <stop offset="1" stop-color="#fff" />
+    </linearGradient>
   </defs>
   <symbol id="icon-arrow" viewBox="0 0 13 24" stroke="none">
     <path clip-rule="evenodd" fill-rule="evenodd" d="M13 12 1.4 0 0 1.4 10.2 12 0 22.6 1.4 24z" />

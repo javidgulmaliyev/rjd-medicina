@@ -1,0 +1,17 @@
+@property --button-background-color-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #3a9ecb;
+}
+
+@property --button-background-color-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #147fae;
+}
+
+@property --button-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fff;
+}

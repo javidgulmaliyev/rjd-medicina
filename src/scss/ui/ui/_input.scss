@@ -1,0 +1,20 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.input {
+  block-size: functions.responsive-value(56, 48);
+  padding-inline: 16px;
+  font-size: functions.responsive-value(16, 14);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: variables.$color-333333;
+  background-color: variables.$color-white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+
+  &::placeholder {
+    font-style: italic;
+    color: variables.$color-828282;
+  }
+}
